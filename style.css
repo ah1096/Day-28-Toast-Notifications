@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Press+Start+2P&display=swap');
 
 * {
     box-sizing: border-box;
@@ -6,7 +6,9 @@
 }
 
 body {
-    font-family: Montserrat;
+    background-color: rgb(142, 202, 255);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -17,5 +19,40 @@ body {
     height: 100vh;
     overflow:hidden;
         /* hides scroll bars */
+}
+
+.btn {
+    background-color: white;
+    color:rgb(142, 202, 255);
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow:rgb(64, 166, 255) 5px 5px 4px 3px;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+#toasts {
+    position: fixed;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toast {
+    background-color: white;
+    color:rgb(64, 166, 255);
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    box-shadow:rgb(64, 166, 255) 4px 4px 3px 2px;
 }
 
