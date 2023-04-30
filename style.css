@@ -45,6 +45,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .toast {
@@ -54,5 +55,17 @@ body {
     padding: 1rem 2rem;
     margin: 0.5rem;
     box-shadow:rgb(64, 166, 255) 4px 4px 3px 2px;
+}
+
+.toast.info {
+    color:rgb(64, 166, 255)
+}
+
+.toast.success {
+    color: rgb(118, 211, 118);
+}
+
+.toast.error {
+    color: rgb(255, 138, 181);
 }
 
